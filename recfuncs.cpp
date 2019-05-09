@@ -38,8 +38,14 @@ void fill_arr(int* arr, int size, int i){
 }
 }
 int calc_factorial(int n){
-  return 0;
+
+  if (n == 0) {
+    return 1;  //see unittest
+  }
+  return calc_factorial(n-1)*n; //multiply the number wit the same number minus 1
 }
+
+
 void calc_sums(int* n, int count, int* out_arr, int* out_arr_bin){
 
 }
